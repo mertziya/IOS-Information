@@ -1,11 +1,13 @@
 //
 //  AppDelegate.swift
-//  CoreAnimationExample
+//  ViewModelWithProtocols
 //
-//  Created by Mert Ziya on 1.01.2025.
+//  Created by Mert Ziya on 27.12.2024.
 //
 
 import UIKit
+import FirebaseCore
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 

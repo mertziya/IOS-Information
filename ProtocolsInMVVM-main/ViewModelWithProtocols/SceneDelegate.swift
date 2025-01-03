@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  CoreAnimationExample
+//  ViewModelWithProtocols
 //
-//  Created by Mert Ziya on 1.01.2025.
+//  Created by Mert Ziya on 27.12.2024.
 //
 
 import UIKit
@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = UINavigationController(rootViewController: ViewController())
+        window.rootViewController = UINavigationController(rootViewController: UserController())
         window.makeKeyAndVisible()
         self.window = window
     }
