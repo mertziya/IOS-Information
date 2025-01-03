@@ -9,7 +9,9 @@ This repository showcases how to implement MVVM architecture using Protocol-Orie
 - Testable and lightweight architecture design.
 
 ## Demo
-https://github.com/user-attachments/assets/928cc67f-f029-47f3-a702-13c9fff44e41
+![DelegatesInMVVM](https://github.com/user-attachments/assets/a957c331-e690-4020-95ca-cee7ce883499)
+
+
 
 ## Details
 https://medium.com/@mert7ziya/using-protocol-driven-mvvm-in-swift-while-working-with-apis-a6044831eec1
