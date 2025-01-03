@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  CoreAnimationExample
+//  DragAndDrop
 //
-//  Created by Mert Ziya on 1.01.2025.
+//  Created by Mert Ziya on 3.01.2025.
 //
 
 import UIKit
