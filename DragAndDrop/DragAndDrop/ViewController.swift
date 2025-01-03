@@ -73,7 +73,7 @@ extension ViewController{
         draggingView.layer.cornerRadius = 8
         draggingView.alpha = 0.7
         
-        centerOfDraggingView.backgroundColor = .red
+        centerOfDraggingView.backgroundColor = .red // For showing that dragged view goes to the view according to the center position.
         centerOfDraggingView.layer.cornerRadius = 4/2
         
         draggingView.translatesAutoresizingMaskIntoConstraints = false
