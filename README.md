@@ -9,12 +9,12 @@
 
 ## Networking:
 
-* [Alamofire](https://github.com/mertziya/IOS-Information/tree/main/WineCatalagoue)
+* [Alamofire](https://github.com/mertziya/IOS-Information/tree/main/WineCatalagoue) (Wine Catalogue Project with infinite scrolling)
 
 
 
 ## UIKit
 
 ### Core Animation:
-* [Calculator (project)](https://github.com/mertziya/IOS-Information/tree/main/CalculatorWithHistory)
+* [Calculator](https://github.com/mertziya/IOS-Information/tree/main/CalculatorWithHistory) (project)
 * [Drag and Drop Animation](https://github.com/mertziya/IOS-Information/tree/main/DragAndDrop)
