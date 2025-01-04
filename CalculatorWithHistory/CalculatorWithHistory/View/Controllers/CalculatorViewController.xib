@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalculatorViewController" customModule="CalculatorWithHistory" customModuleProvider="target" propertyAccessControl="all">
+            <connections>
+                <outlet property="deleteButton" destination="Rrx-TJ-Y8I" id="Co3-SD-I6T"/>
+                <outlet property="divisionButton" destination="qcW-Ig-2Jc" id="DNM-qh-34C"/>
+                <outlet property="dotButton" destination="2DZ-Jf-D0E" id="4Ct-Qh-ETF"/>
+                <outlet property="eigthButton" destination="2S0-xn-dcw" id="41w-Rf-L7U"/>
+                <outlet property="equalsButton" destination="ASv-4o-lkS" id="cke-xb-qVr"/>
+                <outlet property="fiveButton" destination="w49-gR-fkc" id="3qz-Um-fcI"/>
+                <outlet property="fourButton" destination="E6T-u6-tpv" id="Nla-TN-WnV"/>
+                <outlet property="historyButton" destination="1m3-08-fRl" id="a5N-zE-c8G"/>
+                <outlet property="historyLabel" destination="gdH-8l-ZSh" id="m9x-Og-l6x"/>
+                <outlet property="minusButton" destination="WjU-Zt-yns" id="WSp-do-IKs"/>
+                <outlet property="modulusButton" destination="Cw4-qU-4SA" id="DRc-bb-MMG"/>
+                <outlet property="multiplicationButton" destination="XMn-ha-j4t" id="7Ce-oO-OY1"/>
+                <outlet property="ninthButton" destination="3PS-3R-Ver" id="Fdm-Jp-oKV"/>
+                <outlet property="oneButton" destination="RmT-sh-tZ9" id="PbV-gc-oDk"/>
+                <outlet property="paranthesisButton" destination="cUk-rL-Bc6" id="eJd-vj-W2c"/>
+                <outlet property="plusButton" destination="2MO-e6-unP" id="n3h-0N-cW5"/>
+                <outlet property="resetButton" destination="ful-xk-X2y" id="7P4-8d-sgX"/>
+                <outlet property="resultLabel" destination="FIA-5z-3xO" id="Ghj-D9-43u"/>
+                <outlet property="seventhButton" destination="553-Kr-Z7V" id="u7U-aO-pOS"/>
+                <outlet property="sixButton" destination="Avi-Zh-bGe" id="DjR-eZ-dag"/>
+                <outlet property="threebutton" destination="IT9-Qm-SzT" id="Pua-Ty-2Al"/>
+                <outlet property="twoButton" destination="9xl-w0-lmY" id="te0-2v-3Tv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="zeroButton" destination="goS-S8-5id" id="DMf-oa-myK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fy-Th-07X" userLabel="gradientDivider" customClass="GradientView" customModule="CalculatorWithHistory" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="269" width="393" height="10"/>
+                    <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="gyZ-dc-cuB"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" red="0.64313725490196072" green="0.18823529411764706" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="middleColor">
+                            <color key="value" red="0.95294117647058818" green="0.094117647058823528" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" red="1" green="0.12941176470588234" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77s-aa-T7s" userLabel="calculatorBackground">
+                    <rect key="frame" x="0.0" y="279" width="393" height="573"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1m3-08-fRl" userLabel="History">
+                            <rect key="frame" x="28" y="0.0" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="cDU-z3-KDD"/>
+                                <constraint firstAttribute="width" constant="60" id="fjP-1C-nNW"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="history"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrx-TJ-Y8I" userLabel="Delete">
+                            <rect key="frame" x="305" y="0.0" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="7JX-Za-h6b"/>
+                                <constraint firstAttribute="height" constant="60" id="myR-oO-YNI"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="delete"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="lowerbackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="1m3-08-fRl" firstAttribute="leading" secondItem="77s-aa-T7s" secondAttribute="leading" constant="28" id="8He-gN-Tn4"/>
+                        <constraint firstItem="1m3-08-fRl" firstAttribute="top" secondItem="77s-aa-T7s" secondAttribute="top" id="TTA-IP-xNF"/>
+                        <constraint firstItem="Rrx-TJ-Y8I" firstAttribute="top" secondItem="77s-aa-T7s" secondAttribute="top" id="u3C-oX-Chg"/>
+                        <constraint firstAttribute="trailing" secondItem="Rrx-TJ-Y8I" secondAttribute="trailing" constant="28" id="wuJ-Dp-tN5"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sND-r3-DJD">
+                    <rect key="frame" x="20" y="343" width="353" height="455"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="s3U-Wm-bh1">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="83"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ful-xk-X2y" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor2"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="C">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUk-rL-Bc6" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="90.666666666666686" y="0.0" width="81" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor2"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="()">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cw4-qU-4SA" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="181.66666666666666" y="0.0" width="80.666666666666657" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor2"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="%">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcW-Ig-2Jc" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="272.33333333333331" y="0.0" width="80.666666666666686" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor3"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="/">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="83" id="kuz-p8-hRO"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="E8U-Pv-Nkt">
+                            <rect key="frame" x="0.0" y="93" width="353" height="83"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="553-Kr-Z7V" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor1"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="7">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2S0-xn-dcw" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="90.666666666666686" y="0.0" width="81" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor1"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="8">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PS-3R-Ver" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="181.66666666666666" y="0.0" width="80.666666666666657" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor1"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="9">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMn-ha-j4t" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="272.33333333333331" y="0.0" width="80.666666666666686" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor3"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="x">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="83" id="uHm-Di-iOQ"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uoJ-jk-ogc">
+                            <rect key="frame" x="0.0" y="186" width="353" height="83"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6T-u6-tpv" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor1"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="4">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w49-gR-fkc" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="90.666666666666686" y="0.0" width="81" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor1"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="5">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avi-Zh-bGe" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="181.66666666666666" y="0.0" width="80.666666666666657" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor1"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="6">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjU-Zt-yns" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="272.33333333333331" y="0.0" width="80.666666666666686" height="83"/>
+                                    <color key="backgroundColor" red="0.38823529411764707" green="0.26666666666666666" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="-">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <font key="NSOriginalFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="83" id="6HA-hc-CQ4"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="k6b-iM-9Oi">
+                            <rect key="frame" x="0.0" y="279" width="353" height="83"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RmT-sh-tZ9" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor1"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="1">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xl-w0-lmY" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="90.666666666666686" y="0.0" width="81" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor1"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="2">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IT9-Qm-SzT" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="181.66666666666666" y="0.0" width="80.666666666666657" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor1"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="3">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MO-e6-unP" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="272.33333333333331" y="0.0" width="80.666666666666686" height="83"/>
+                                    <color key="backgroundColor" red="0.38823529411764707" green="0.26666666666666666" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="+">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="83" id="lSE-9s-E9k"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u3m-5G-NjR">
+                            <rect key="frame" x="0.0" y="372" width="353" height="83"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tp3-N0-BMA" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor1"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="+/-">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goS-S8-5id" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="90.666666666666686" y="0.0" width="81" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor1"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="0">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DZ-Jf-D0E" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="181.66666666666666" y="0.0" width="80.666666666666657" height="83"/>
+                                    <color key="backgroundColor" name="buttonColor1"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content=".">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" name="buttonTextColor"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASv-4o-lkS" customClass="CustomButton" customModule="CalculatorWithHistory" customModuleProvider="target">
+                                    <rect key="frame" x="272.33333333333331" y="0.0" width="80.666666666666686" height="83"/>
+                                    <color key="backgroundColor" systemColor="underPageBackgroundColor"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="=">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="26" name="Helvetica-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" red="0.64313725490196072" green="0.18823529411764706" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="middleColor">
+                                            <color key="value" red="0.95294117647058818" green="0.094117647058823528" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" red="1" green="0.12941176470588234" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="83" id="P9d-V7-0XK"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIA-5z-3xO">
+                    <rect key="frame" x="20" y="184" width="353" height="77"/>
+                    <color key="tintColor" name="buttonTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="77" id="4H9-Lr-UoP"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="1080">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="0.9882352941176471" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="64" name="ProximaNova-Bold"/>
+                                <font key="NSOriginalFont" size="64" name="Wingdings3"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdH-8l-ZSh" userLabel="History">
+                    <rect key="frame" x="0.0" y="140" width="373" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="W8u-EI-ChT"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Label">
+                            <attributes>
+                                <color key="NSColor" red="0.50980392156862742" green="0.54117647058823526" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="36" name="ArialMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="upperbackgroundcolor"/>
+            <constraints>
+                <constraint firstItem="77s-aa-T7s" firstAttribute="top" secondItem="0fy-Th-07X" secondAttribute="bottom" id="0VD-p0-GXE"/>
+                <constraint firstItem="0fy-Th-07X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1Zc-re-5gP"/>
+                <constraint firstItem="77s-aa-T7s" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="220" id="47S-re-Lxy"/>
+                <constraint firstItem="FIA-5z-3xO" firstAttribute="top" secondItem="gdH-8l-ZSh" secondAttribute="bottom" id="BQx-Jd-a7j"/>
+                <constraint firstAttribute="bottom" secondItem="77s-aa-T7s" secondAttribute="bottom" id="DSi-rS-IT1"/>
+                <constraint firstAttribute="trailing" secondItem="FIA-5z-3xO" secondAttribute="trailing" constant="20" id="DcP-Uo-Kfz"/>
+                <constraint firstItem="gdH-8l-ZSh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P2t-f9-jUw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0fy-Th-07X" secondAttribute="trailing" id="SXj-lb-5kl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sND-r3-DJD" secondAttribute="bottom" constant="20" id="Vny-km-2xD"/>
+                <constraint firstItem="sND-r3-DJD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="WNe-0N-FX9"/>
+                <constraint firstAttribute="trailing" secondItem="77s-aa-T7s" secondAttribute="trailing" id="XiT-ul-0ES"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sND-r3-DJD" secondAttribute="trailing" constant="20" id="aVo-M4-pYw"/>
+                <constraint firstItem="77s-aa-T7s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eut-oZ-eqG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gdH-8l-ZSh" secondAttribute="trailing" constant="20" id="vGo-yZ-bDT"/>
+                <constraint firstItem="FIA-5z-3xO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="xsN-c0-cPl"/>
+                <constraint firstItem="0fy-Th-07X" firstAttribute="top" secondItem="FIA-5z-3xO" secondAttribute="bottom" constant="8" id="zd9-kZ-rxc"/>
+            </constraints>
+            <point key="canvasLocation" x="331" y="-534"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete" width="40" height="28"/>
+        <image name="history" width="39" height="39"/>
+        <namedColor name="buttonColor1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonColor2">
+            <color red="0.9179999828338623" green="0.92199999094009399" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="buttonColor3">
+            <color red="0.36899998784065247" green="0.27099999785423279" blue="0.80000001192092896" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="buttonTextColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lowerbackgroundColor">
+            <color red="0.77600002288818359" green="0.73299998044967651" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="upperbackgroundcolor">
+            <color red="0.9179999828338623" green="0.92199999094009399" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="underPageBackgroundColor">
+            <color red="0.70980392156862748" green="0.71764705882352942" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
