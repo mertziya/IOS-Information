@@ -9,7 +9,8 @@
 
 ## Networking:
 
-* [Alamofire](https://github.com/mertziya/IOS-Information/tree/main/WineCatalagoue) (Wine Catalogue Project with infinite scrolling)
+* [Alamofire](https://github.com/mertziya/IOS-Information/tree/main/WineCatalagoue)
+* [Infinite Scrolling](https://github.com/mertziya/IOS-Information/tree/main/InfiniteScroll)
 
 
 
