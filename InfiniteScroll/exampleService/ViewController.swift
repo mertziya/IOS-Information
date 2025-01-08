@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         setupTableViewFooter()
         
         fetchMorePhotos(amount: 20)
+        
     }
 
 
@@ -76,7 +77,6 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource{
                 self.isScrolled = false
             }
         }
-        
     }
     
     

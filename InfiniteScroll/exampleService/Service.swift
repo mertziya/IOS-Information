@@ -31,15 +31,18 @@ class Service{
                     let decoder = JSONDecoder()
                     let modeledData = try decoder.decode([Model].self, from: data)
                     
-                    
-                    let initial = self.fetchedAmount // the last position that we were currently on.
-                    var twentyMore : [Model] = [] // new array of Model to be inserted.
-                    for row in modeledData[initial...initial+amount]{
-                        twentyMore.append(row)
-                    }
-                    self.fetchedAmount += amount+1 // updating the final position
-                    
-                    completion(.success(twentyMore)) // return the 20 more data
+                    // ***************** CRUCUIAL FOR THE PAGINATION   ****************************************
+                    //                                                                                        *
+                    let initial = self.fetchedAmount // the last position that we were currently on.          *
+                    var twentyMore : [Model] = [] // new array of Model to be inserted.                       *
+                    for row in modeledData[initial...initial+amount]{//                                       *
+                        twentyMore.append(row)//                                                              *
+                    } //                                                                                      *
+                    self.fetchedAmount += amount+1 // updating the final position                             *
+                    //                                                                                        *
+                    completion(.success(twentyMore)) // returns the next 'x' amount of data on completion     *
+                    //                                                                                        *
+                    // ****************************************************************************************
 
                 }catch{
                     completion(.failure(error))
@@ -73,4 +76,5 @@ class Service{
             
         }.resume()
     }
+    
 }
