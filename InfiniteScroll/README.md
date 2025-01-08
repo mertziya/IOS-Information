@@ -19,7 +19,7 @@ func getMorePhotos(amount: Int , completion : @escaping (Result<[Model],Error>) 
                 let decoder = JSONDecoder()
                 let modeledData = try decoder.decode([Model].self, from: data)
                 
-                // ***************** CRUCUIAL FOR THE PAGINATION   ****************************************
+                // ***************** CRUCUIAL FOR THE Infinite Scroll   ***********************************
                 //                                                                                        *
                 let initial = self.fetchedAmount // the last position that we were currently on.          *
                 var twentyMore : [Model] = [] // new array of Model to be inserted.                       *
