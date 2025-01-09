@@ -21,7 +21,7 @@ class RESTservice{
     
     
     static func login(email: String , password: String, completion: @escaping (Result<String, Error>) -> () ){
-        guard let url = URL(string: "http://localhost:5001/auth/login") else{
+        guard let url = URL(string: "http://172.20.10.4:5001/auth/login") else{
             completion(.failure(ErrorType.authUrlError))
             return
         }
@@ -69,7 +69,7 @@ class RESTservice{
             return
         }
         
-        guard let url = URL(string: "http://localhost:5001/directly-from-spotify?songName=\(name)") else {
+        guard let url = URL(string: "http://172.20.10.4:5001/directly-from-spotify?songName=\(name)") else {
             completion(.failure(ErrorType.spotifUrlError))
             return
         }
