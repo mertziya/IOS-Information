@@ -81,6 +81,7 @@ class Person {
     init(name: String, horse: Horse?) {
         self.name = name
         self.horse = horse
+        
     }
     
     deinit {
