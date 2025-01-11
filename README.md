@@ -6,7 +6,6 @@
 * [Delegate Pattern in MVVM](https://github.com/mertziya/IOS-Information/tree/main/ProtocolsInMVVM-main)
 
 
-
 ## Networking:
 
 * [Alamofire](https://github.com/mertziya/IOS-Information/tree/main/WineCatalagoue)
@@ -26,10 +25,11 @@
 
 * [MapKit](https://github.com/mertziya/Travel-Book-withAnimation)
 * [PDFKit](https://github.com/mertziya/IOS-Information/tree/main/pdfViewer)
+* [WebKit](https://github.com/mertziya/IOS-Information/edit/main/WebKitExample/README.md)
 
-## Projects:
+## Architectures:
 
-* [Gibigram](https://github.com/mertziya/Gibigram)
+* [Gibigram - MVVM](https://github.com/mertziya/Gibigram)
 
 ## Others:
 * [Memory Management](https://github.com/mertziya/Gibigram)
