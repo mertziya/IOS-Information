@@ -25,7 +25,7 @@
 
 * [MapKit](https://github.com/mertziya/Travel-Book-withAnimation)
 * [PDFKit](https://github.com/mertziya/IOS-Information/tree/main/pdfViewer)
-* [WebKit](https://github.com/mertziya/IOS-Information/edit/main/WebKitExample/README.md)
+* [WebKit](https://github.com/mertziya/IOS-Information/edit/main/WebKitExample)
 
 ## Architectures:
 
