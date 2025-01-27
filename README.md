@@ -30,7 +30,7 @@
 ## Architectures:
 
 * [Gibigram - MVVM](https://github.com/mertziya/Gibigram)
-* [Userlist - MVVM](https://github.com/mertziya/IOS-Information/tree/main/UserLisrMVVM)
+* [Userlist - MVVM](https://github.com/mertziya/IOS-Information/tree/main/UserListMVVM)
 
 ## Others:
 * [Memory Management](https://github.com/mertziya/Gibigram)
