@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  UserLisrMVVM
+//  UserListMVVM
 //
 //  Created by Mert Ziya on 27.01.2025.
 //

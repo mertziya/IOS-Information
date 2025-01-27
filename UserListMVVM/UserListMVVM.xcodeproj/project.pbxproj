@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		C600311E2D477FD20024CA6A /* UserLisrMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserLisrMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60031542D4781780024CA6A /* UserListMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserListMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C60031302D477FD30024CA6A /* Exceptions for "UserLisrMVVM" folder in "UserLisrMVVM" target */ = {
+		C60031662D4781790024CA6A /* Exceptions for "UserListMVVM" folder in "UserListMVVM" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = C600311D2D477FD20024CA6A /* UserLisrMVVM */;
+			target = C60031532D4781780024CA6A /* UserListMVVM */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C60031202D477FD20024CA6A /* UserLisrMVVM */ = {
+		C60031562D4781780024CA6A /* UserListMVVM */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				C60031302D477FD30024CA6A /* Exceptions for "UserLisrMVVM" folder in "UserLisrMVVM" target */,
+				C60031662D4781790024CA6A /* Exceptions for "UserListMVVM" folder in "UserListMVVM" target */,
 			);
-			path = UserLisrMVVM;
+			path = UserListMVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C600311B2D477FD20024CA6A /* Frameworks */ = {
+		C60031512D4781780024CA6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C60031152D477FD20024CA6A = {
+		C600314B2D4781780024CA6A = {
 			isa = PBXGroup;
 			children = (
-				C60031202D477FD20024CA6A /* UserLisrMVVM */,
-				C600311F2D477FD20024CA6A /* Products */,
+				C60031562D4781780024CA6A /* UserListMVVM */,
+				C60031552D4781780024CA6A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C600311F2D477FD20024CA6A /* Products */ = {
+		C60031552D4781780024CA6A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C600311E2D477FD20024CA6A /* UserLisrMVVM.app */,
+				C60031542D4781780024CA6A /* UserListMVVM.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +61,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C600311D2D477FD20024CA6A /* UserLisrMVVM */ = {
+		C60031532D4781780024CA6A /* UserListMVVM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C60031312D477FD30024CA6A /* Build configuration list for PBXNativeTarget "UserLisrMVVM" */;
+			buildConfigurationList = C60031672D4781790024CA6A /* Build configuration list for PBXNativeTarget "UserListMVVM" */;
 			buildPhases = (
-				C600311A2D477FD20024CA6A /* Sources */,
-				C600311B2D477FD20024CA6A /* Frameworks */,
-				C600311C2D477FD20024CA6A /* Resources */,
+				C60031502D4781780024CA6A /* Sources */,
+				C60031512D4781780024CA6A /* Frameworks */,
+				C60031522D4781780024CA6A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C60031202D477FD20024CA6A /* UserLisrMVVM */,
+				C60031562D4781780024CA6A /* UserListMVVM */,
 			);
-			name = UserLisrMVVM;
+			name = UserListMVVM;
 			packageProductDependencies = (
 			);
-			productName = UserLisrMVVM;
-			productReference = C600311E2D477FD20024CA6A /* UserLisrMVVM.app */;
+			productName = UserListMVVM;
+			productReference = C60031542D4781780024CA6A /* UserListMVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C60031162D477FD20024CA6A /* Project object */ = {
+		C600314C2D4781780024CA6A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					C600311D2D477FD20024CA6A = {
+					C60031532D4781780024CA6A = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
 			};
-			buildConfigurationList = C60031192D477FD20024CA6A /* Build configuration list for PBXProject "UserLisrMVVM" */;
+			buildConfigurationList = C600314F2D4781780024CA6A /* Build configuration list for PBXProject "UserListMVVM" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = C60031152D477FD20024CA6A;
+			mainGroup = C600314B2D4781780024CA6A;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = C600311F2D477FD20024CA6A /* Products */;
+			productRefGroup = C60031552D4781780024CA6A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C600311D2D477FD20024CA6A /* UserLisrMVVM */,
+				C60031532D4781780024CA6A /* UserListMVVM */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C600311C2D477FD20024CA6A /* Resources */ = {
+		C60031522D4781780024CA6A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C600311A2D477FD20024CA6A /* Sources */ = {
+		C60031502D4781780024CA6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +138,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C60031322D477FD30024CA6A /* Debug */ = {
+		C60031682D4781790024CA6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -147,7 +147,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DU4MNZ89TN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UserLisrMVVM/Info.plist;
+				INFOPLIST_FILE = UserListMVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -158,7 +158,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mertziya.UserLisrMVVM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mertziya.UserListMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -166,7 +166,7 @@
 			};
 			name = Debug;
 		};
-		C60031332D477FD30024CA6A /* Release */ = {
+		C60031692D4781790024CA6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -175,7 +175,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DU4MNZ89TN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UserLisrMVVM/Info.plist;
+				INFOPLIST_FILE = UserListMVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -186,7 +186,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mertziya.UserLisrMVVM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mertziya.UserListMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -194,7 +194,7 @@
 			};
 			name = Release;
 		};
-		C60031342D477FD30024CA6A /* Debug */ = {
+		C600316A2D4781790024CA6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -257,7 +257,7 @@
 			};
 			name = Debug;
 		};
-		C60031352D477FD30024CA6A /* Release */ = {
+		C600316B2D4781790024CA6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -316,25 +316,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C60031192D477FD20024CA6A /* Build configuration list for PBXProject "UserLisrMVVM" */ = {
+		C600314F2D4781780024CA6A /* Build configuration list for PBXProject "UserListMVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C60031342D477FD30024CA6A /* Debug */,
-				C60031352D477FD30024CA6A /* Release */,
+				C600316A2D4781790024CA6A /* Debug */,
+				C600316B2D4781790024CA6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C60031312D477FD30024CA6A /* Build configuration list for PBXNativeTarget "UserLisrMVVM" */ = {
+		C60031672D4781790024CA6A /* Build configuration list for PBXNativeTarget "UserListMVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C60031322D477FD30024CA6A /* Debug */,
-				C60031332D477FD30024CA6A /* Release */,
+				C60031682D4781790024CA6A /* Debug */,
+				C60031692D4781790024CA6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C60031162D477FD20024CA6A /* Project object */;
+	rootObject = C600314C2D4781780024CA6A /* Project object */;
 }
