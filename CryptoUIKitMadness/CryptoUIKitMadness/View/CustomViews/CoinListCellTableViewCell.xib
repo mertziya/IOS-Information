@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="CoinListCellTableViewCell" customModule="CryptoUIKitMadness" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddm-4u-IQu">
+                        <rect key="frame" x="12" y="30" width="30" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="EZO-Bm-Si2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fZB-LV-Aov">
+                        <rect key="frame" x="54.000000000000007" y="20.666666666666671" width="85.666666666666686" height="36"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BSr-5X-VjP">
+                                <rect key="frame" x="0.0" y="1" width="35.333333333333336" height="34"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="HFd-jM-tmJ">
+                                <rect key="frame" x="43.333333333333329" y="2.3333333333333339" width="42.333333333333329" height="31.333333333333329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHR-Ed-LwD">
+                                        <rect key="frame" x="0.0" y="0.0" width="25.666666666666668" height="15.666666666666666"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1.05 B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTW-eE-dSi">
+                                        <rect key="frame" x="0.0" y="15.666666666666664" width="42.333333333333336" height="15.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100.000,62" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lH5-DF-6OV">
+                        <rect key="frame" x="141" y="30.333333333333336" width="140" height="16.333333333333336"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="x4o-ZN-Xbr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CAM-Ip-dep">
+                        <rect key="frame" x="321" y="28.333333333333336" width="70" height="20.333333333333336"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowtriangle.down.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="N1V-BD-ZUD">
+                                <rect key="frame" x="0.0" y="2.3333333333333313" width="21.333333333333332" height="15.666666666666668"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24.7%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoy-8y-hGP">
+                                <rect key="frame" x="21.333333333333311" y="2.3333333333333348" width="48.666666666666657" height="15.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="RoI-WB-Ulr"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="CAM-Ip-dep" secondAttribute="trailing" constant="12" id="0gO-pP-TQU"/>
+                    <constraint firstItem="fZB-LV-Aov" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DUL-GV-ENp"/>
+                    <constraint firstItem="fZB-LV-Aov" firstAttribute="leading" secondItem="ddm-4u-IQu" secondAttribute="trailing" constant="12" id="WhE-i0-HbX"/>
+                    <constraint firstItem="ddm-4u-IQu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XVc-dd-XGa"/>
+                    <constraint firstItem="ddm-4u-IQu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="cJz-Vo-z7I"/>
+                    <constraint firstItem="CAM-Ip-dep" firstAttribute="leading" secondItem="lH5-DF-6OV" secondAttribute="trailing" constant="40" id="eFk-PW-1JU"/>
+                    <constraint firstItem="CAM-Ip-dep" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="h9W-v1-Hff"/>
+                    <constraint firstItem="lH5-DF-6OV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iGP-mO-ZGn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+            <connections>
+                <outlet property="arrowUpDown" destination="N1V-BD-ZUD" id="qhz-O0-igO"/>
+                <outlet property="coinImage" destination="BSr-5X-VjP" id="d4Z-5E-YlX"/>
+                <outlet property="coinMarketCapLabel" destination="aTW-eE-dSi" id="v5G-RZ-PAC"/>
+                <outlet property="coinNameLabel" destination="zHR-Ed-LwD" id="m5d-ip-P9J"/>
+                <outlet property="coinPriceLabel" destination="lH5-DF-6OV" id="Aaj-5K-soa"/>
+                <outlet property="dailyChangePercent" destination="uoy-8y-hGP" id="EgU-pv-L23"/>
+                <outlet property="marketRatingLabel" destination="ddm-4u-IQu" id="cKN-ok-xYY"/>
+            </connections>
+            <point key="canvasLocation" x="38.931297709923662" y="-24.295774647887324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowtriangle.down.fill" catalog="system" width="128" height="120"/>
+        <image name="bitcoinsign.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
