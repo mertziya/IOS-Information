@@ -25,7 +25,7 @@ class HomeScreenVC: UIViewController{
     // MARK: - UI Elements:
     @IBOutlet weak var coinlistHeader: CoinListHeaderView!
     @IBOutlet weak var coinList: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var searchBar: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +39,7 @@ enum TableViewDataSource{
     case market
 }
 
-extension HomeScreenVC : UITableViewDelegate , UITableViewDataSource {
+extension HomeScreenVC : UITableViewDelegate , UITableViewDataSource, UITextFieldDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch dataSource{
@@ -58,9 +58,10 @@ extension HomeScreenVC : UITableViewDelegate , UITableViewDataSource {
             cell.configureCell(with: currentMarket[indexPath.row])
             
             return cell
+            
+      
         }
         
-        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -73,8 +74,28 @@ extension HomeScreenVC : UITableViewDelegate , UITableViewDataSource {
         coinList.delegate = self
         coinList.dataSource = self
         coinList.register(UINib(nibName: CoinListCellTableViewCell.nibName , bundle: nil), forCellReuseIdentifier: CoinListCellTableViewCell.identifier)
-        
      
+        searchBar.backgroundColor = .systemBackground.withAlphaComponent(0.3)
+        searchBar.attributedPlaceholder = NSAttributedString(string: "Search", attributes: [
+            .foregroundColor : UIColor.label
+        ])
+        searchBar.isUserInteractionEnabled = true
+        searchBar.addTarget(self, action: #selector(hapticAction(_:)), for: .editingDidEnd)
+        searchBar.returnKeyType = .search
+        searchBar.delegate = self
+
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return true
+    }
+    
+    
+    @objc private func hapticAction(_ textField : UITextField){
+        let impactFeedback = UIImpactFeedbackGenerator(style: .light, view: self.searchBar)
+        impactFeedback.prepare()
+        impactFeedback.impactOccurred()
     }
     
 }
