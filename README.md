@@ -31,6 +31,7 @@
 
 * [Gibigram - MVVM](https://github.com/mertziya/Gibigram)
 * [Userlist - MVVM](https://github.com/mertziya/IOS-Information/tree/main/UserListMVVM)
+* [Crypto List - MVVM](https://github.com/mertziya/IOS-Information/blob/main/CryptoUIKitMadness/README.md)
 
 ## Others:
 * [Memory Management](https://github.com/mertziya/Gibigram)
